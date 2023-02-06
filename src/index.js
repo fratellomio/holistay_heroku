@@ -30,8 +30,8 @@ const app = express();
 app.use('/public', express.static(path.join(__dirname, './public')));
 app.use(credentials);
 app.use(
-  cors(corsOptions)
-  // cors()
+  // cors(corsOptions)
+  cors()
   // {
   //   origin: [
   //     process.env.WHITELISTED_DOMAIN &&
