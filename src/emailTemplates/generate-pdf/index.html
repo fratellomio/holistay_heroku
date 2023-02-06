@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Report Transaction</title>
+    <link rel="stylesheet" href="style.css" media="all" />
+  </head>
+  <body>
+    <header class="clearfix">
+      <div id="logo">
+        <img src="https://i.ibb.co/vCN2BQ0/Logo.png">
+      </div>
+      <div id="company">
+        <h2 class="name">Holistay</h2>
+        <div>Jakarta, Indonesia</div>
+        <div>(602) 519-0450</div>
+        <div><a href="mailto:kelompok3holistay@gmail.com">kelompok3holistay@gmail.com</a></div>
+      </div>
+      </div>
+    </header>
+    <main>
+      <div id="details" class="clearfix">
+        <div id="client">
+          <div class="to">INVOICE TO:</div>
+          <h2 class="name">{{fullName}}</h2>
+          <div class="email"><a href="mailto:john@example.com">{{email}}</a></div>
+        </div>
+        <div id="invoice">
+          <div class="date">Date of Invoice: {{invoiceDate}}</div>
+            <div id="qrcode">
+              <img src="{{{qrcode}}}" >
+            </div>
+        </div>
+      </div>
+      <table cellspacing="0" cellpadding="0">
+        <thead>
+          <tr>
+            <th >No</th>
+            <th class="desc">Nama Property</th>
+            <th >Nama Kamar</th>
+            <th >Tamu</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td >01</td>
+            <td class="desc" >
+              <h3>{{propertyName}}</h3>
+              {{checkIn}} - {{checkOut}}</td>
+            <td >{{roomName}}</td>
+            <td >{{fullName}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="peraturan">
+        <h2>Catatan Penting</h2>
+        <ul>
+          <li>Jadwal check-in Pukul 14.00 dan Jadwal Check-Out maksimal pukul 12.00</li>
+          <li>Sewaktu check-in diperlukan tanda pengenal dengan foto resmi dikeluarkan oleh pemerintah dan kartu kredit atau deposit tunai untuk menutup biaya tak terduga.</li>
+          <li>Biaya tambahan seperti parkir, deposit, telepon, layanan kamar ditangani langsung antara anda dan akomodasi.</li>
+        </ul>
+        <h2>Kebijakan Pembatalan Hotel</h2>
+        <ul>
+          <li>Pemesanan tidak bisa di re-fund</li>
+          <li>Waktu yang ditampilkan sesuai waktu lokal akomodasi</li>
+          <li>Tanggal inap dan tipe kamar/unit tidak dapat diubah.</li>
+        </ul>
+      </div>
+      <div id="thanks">Thank you!</div>
+      <div id="notices">
+        <div>NOTICE:</div>
+        <div class="notice">UNTUK PERTANYAAN APAPUN HUBUNGI HOLISTAY HELP CENTER</div>
+      </div>
+    </main>
+    <footer>
+      Senang menemani liburan anda, Keep Enjoy !
+    </footer>
+  </body>
+</html>
