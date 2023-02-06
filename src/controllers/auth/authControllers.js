@@ -37,7 +37,7 @@ module.exports = {
       const tempResult = tempCompile({
         fullName,
         otp,
-        link: `http://localhost:3000/verification/${token}`,
+        link: `https://holistay.herokuapp.com/verification/${token}`,
       });
 
       await nodemailer.sendMail({
@@ -233,7 +233,7 @@ module.exports = {
       const tempResult = tempCompile({
         fullName: emailExist.fullName,
         otp,
-        link: `http://localhost:3000/verification/${token}`,
+        link: `https://holistay.herokuapp.com/verification/${token}`,
       });
 
       await nodemailer.sendMail({
@@ -295,7 +295,7 @@ module.exports = {
       email,
       browser,
       device,
-      link: `http://localhost:3000/resetpassword/${emailExist.id}/${token}`,
+      link: `https://holistay.herokuapp.com/resetpassword/${emailExist.id}/${token}`,
     });
 
     await nodemailer.sendMail({
