@@ -2,8 +2,10 @@
   "name": "heroku",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "start": "node src/index.js",
+    "serve": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
