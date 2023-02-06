@@ -52,7 +52,6 @@ const RegisterAsTenant = async (req, res) => {
       userId,
     });
 
-
     ktp.mv('./src/public/ktp/' + filename);
 
     res.status(201);
@@ -68,29 +67,29 @@ const RegisterAsTenant = async (req, res) => {
       },
     });
 
-  //   if (autoDetect) {
-  //     const check = await checkKTP(filename);
-  //     check == KTPNumber
-  //       ? res.status(200).send({ message: 'Automatic verification success' })
-  //       : res
-  //           .status(500)
-  //           .send({ message: 'Not a match, switch to manual verification' });
-  //   } else {
-  //     res.status(200);
-  //     res.send({
-  //       status: true,
-  //       message:
-  //         'Photo is successufully uploaded, please wait for manual verification by our staff',
-  //       data: {
-  //         KTPNumber,
-  //         tenantId: newTenant?.id,
-  //         name: ktp.name,
-  //         mimetype: ktp.mimetype,
-  //         size: ktp.size,
-  //       },
-  //     });
-  //   }
-  // }
+    //   if (autoDetect) {
+    //     const check = await checkKTP(filename);
+    //     check == KTPNumber
+    //       ? res.status(200).send({ message: 'Automatic verification success' })
+    //       : res
+    //           .status(500)
+    //           .send({ message: 'Not a match, switch to manual verification' });
+    //   } else {
+    //     res.status(200);
+    //     res.send({
+    //       status: true,
+    //       message:
+    //         'Photo is successufully uploaded, please wait for manual verification by our staff',
+    //       data: {
+    //         KTPNumber,
+    //         tenantId: newTenant?.id,
+    //         name: ktp.name,
+    //         mimetype: ktp.mimetype,
+    //         size: ktp.size,
+    //       },
+    //     });
+    //   }
+  }
 };
 
 const test = async (req, res) => {
